@@ -1,0 +1,75 @@
+name: Question/General Discussion
+description: Ask a question or start a general discussion about EVE Tools
+title: "[QUESTION] "
+labels: ["question", "status: triage"]
+assignees: []
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Have a question about EVE Tools? Want to discuss ideas or get help? You're in the right place!
+        
+        **Note:** For specific bugs, use the Bug Report template. For feature requests, use the Feature Request template.
+
+  - type: dropdown
+    id: question-type
+    attributes:
+      label: Question Type
+      description: What type of question is this?
+      options:
+        - How to use a feature
+        - Technical question
+        - General discussion
+        - Feedback/Suggestion
+        - EVE Online integration question
+        - Development question
+        - Other
+    validations:
+      required: true
+
+  - type: dropdown
+    id: module
+    attributes:
+      label: Related Module (if applicable)
+      description: Is your question about a specific module?
+      options:
+        - Market Analysis
+        - Fleet Management  
+        - Corporation Tools
+        - Industry Planning
+        - PvP Tools
+        - PvE Tools
+        - General/Core
+        - Not specific to a module
+        - Not sure
+
+  - type: textarea
+    id: question
+    attributes:
+      label: Your Question
+      description: What would you like to know or discuss?
+      placeholder: "I'm wondering about..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: context
+    attributes:
+      label: Context/Background
+      description: Provide any relevant context that might help others understand your question
+      placeholder: "I'm trying to... and I noticed that..."
+
+  - type: textarea
+    id: tried
+    attributes:
+      label: What Have You Tried?
+      description: If you're having trouble with something, what have you already attempted?
+      placeholder: "I've tried..."
+
+  - type: textarea
+    id: additional
+    attributes:
+      label: Additional Information
+      description: Any other relevant details
+      placeholder: "Additional context..."

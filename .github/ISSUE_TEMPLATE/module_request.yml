@@ -1,0 +1,185 @@
+name: Tool Request
+description: Request a new tool or utility for EVE Tools
+title: "[TOOL REQUEST] "
+labels: ["module-request", "enhancement", "status: triage"]
+assignees: []
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for suggesting a new module! New tools and utilities help expand EVE Tools for the entire community.
+        
+        **Before submitting:** Please search existing issues to see if this module has already been requested.
+
+  - type: input
+    id: module-name
+    attributes:
+      label: Module Name
+      description: What would you call this new tool/module?
+      placeholder: "e.g., 'Route Planner', 'Fit Optimizer', 'Market Scanner'"
+    validations:
+      required: true
+
+  - type: textarea
+    id: purpose
+    attributes:
+      label: Module Purpose
+      description: What is the main goal of this module? What problem does it solve?
+      placeholder: "This module would help players..."
+    validations:
+      required: true
+
+  - type: dropdown
+    id: category
+    attributes:
+      label: Tool Category
+      description: What category does this tool fit into?
+      options:
+        - Contract Management
+        - Market Analysis
+        - Fleet Management  
+        - Corporation Tools
+        - Industry Planning
+        - PvP Tools
+        - PvE Tools
+        - Navigation/Travel
+        - Character Planning
+        - Logistics
+        - Intelligence
+        - Other
+    validations:
+      required: true
+
+  - type: dropdown
+    id: target-audience
+    attributes:
+      label: Target Audience
+      description: Who would primarily use this module?
+      options:
+        - New Players
+        - Casual Players
+        - Experienced Players
+        - Corporation Leaders
+        - Fleet Commanders
+        - Traders
+        - Industrialists
+        - Miners
+        - PvP Pilots
+        - PvE Players
+        - Explorers
+        - All Players
+      multiple: true
+    validations:
+      required: true
+
+  - type: textarea
+    id: core-features
+    attributes:
+      label: Core Features
+      description: What are the essential features this module needs?
+      placeholder: |
+        - Feature 1: Description
+        - Feature 2: Description  
+        - Feature 3: Description
+    validations:
+      required: true
+
+  - type: textarea
+    id: user-workflow
+    attributes:
+      label: User Workflow
+      description: Describe how a user would interact with this module
+      placeholder: |
+        1. User opens the module
+        2. User inputs/selects [data]
+        3. Module processes and shows [results]
+        4. User can then [take action]
+    validations:
+      required: true
+
+  - type: textarea
+    id: eve-integration
+    attributes:
+      label: EVE Online Integration
+      description: What EVE Online data or APIs would this module need?
+      placeholder: "e.g., Market data, Character skills, Ship fittings, System data, etc."
+    validations:
+      required: true
+
+  - type: textarea
+    id: similar-tools
+    attributes:
+      label: Similar Existing Tools
+      description: Are there existing tools that do something similar? How would this be different/better?
+      placeholder: "Tools like [X] exist, but they don't handle [Y] or lack [Z]..."
+
+  - type: dropdown
+    id: complexity
+    attributes:
+      label: Estimated Complexity
+      description: How complex do you think this module would be to implement?
+      options:
+        - Simple - Basic data display or calculations
+        - Medium - Moderate logic and API integration  
+        - Complex - Advanced algorithms or extensive features
+        - Very Complex - Multiple interconnected systems
+        - Not sure
+      default: 4
+
+  - type: dropdown
+    id: priority
+    attributes:
+      label: Priority
+      description: How important is this module to you and the community?
+      options:
+        - Critical - Essential missing functionality
+        - High - Would significantly benefit many players
+        - Medium - Useful addition to the toolkit
+        - Low - Nice to have but not urgent
+      default: 1
+    validations:
+      required: true
+
+  - type: textarea
+    id: mockups
+    attributes:
+      label: Mockups/Interface Ideas
+      description: Do you have ideas for how the interface should look? Screenshots of similar tools?
+      placeholder: "Drag and drop images here or describe the interface..."
+
+  - type: textarea
+    id: technical-notes
+    attributes:
+      label: Technical Considerations
+      description: Any technical requirements, limitations, or ideas you're aware of?
+      placeholder: "This might require real-time data updates, caching strategies, etc."
+
+  - type: input
+    id: champion
+    attributes:
+      label: Community Champion
+      description: Are you willing to help test, provide feedback, or assist with this module's development?
+      placeholder: "Yes, I'd be happy to help test and provide feedback"
+
+  - type: textarea
+    id: additional
+    attributes:
+      label: Additional Context
+      description: Any other relevant information about this module request
+      placeholder: "Additional details, use cases, or context..."
+
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Checklist
+      description: Please confirm the following
+      options:
+        - label: I have searched existing issues for similar module requests
+          required: true
+        - label: This module would comply with CCP's Terms of Service and policies
+          required: true
+        - label: I have provided clear use cases and target audience information
+          required: true
+        - label: I understand this is a request and development depends on resources and priorities
+          required: true

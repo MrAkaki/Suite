@@ -1,0 +1,87 @@
+name: Documentation Improvement
+description: Suggest improvements to documentation, guides, or help content
+title: "[DOCS] "
+labels: ["documentation", "status: triage"]
+assignees: []
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for helping improve EVE Tools documentation! Clear documentation helps everyone use the tools more effectively.
+
+  - type: dropdown
+    id: doc-type
+    attributes:
+      label: Documentation Type
+      description: What type of documentation needs improvement?
+      options:
+        - User Guide/Tutorial
+        - API Documentation
+        - Installation Instructions
+        - Feature Documentation
+        - FAQ/Troubleshooting
+        - Code Comments
+        - README Files
+        - Other
+    validations:
+      required: true
+
+  - type: input
+    id: location
+    attributes:
+      label: Location/File
+      description: Where is the documentation that needs improvement?
+      placeholder: "e.g., README.md, docs/user-guide.md, help section in app"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: issue-type
+    attributes:
+      label: Issue Type
+      description: What kind of improvement is needed?
+      options:
+        - Missing Information
+        - Incorrect Information
+        - Unclear/Confusing Explanation
+        - Outdated Content
+        - Grammar/Spelling
+        - Formatting Issues
+        - New Documentation Needed
+        - Translation
+      multiple: true
+    validations:
+      required: true
+
+  - type: textarea
+    id: current-issue
+    attributes:
+      label: Current Issue
+      description: What's wrong with the current documentation?
+      placeholder: "The current documentation..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: proposed-improvement
+    attributes:
+      label: Proposed Improvement
+      description: How should it be improved? What should be added/changed?
+      placeholder: "It should be changed to..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: user-impact
+    attributes:
+      label: User Impact
+      description: How does this documentation issue affect users?
+      placeholder: "This causes confusion because..."
+
+  - type: textarea
+    id: additional
+    attributes:
+      label: Additional Context
+      description: Any other relevant information
+      placeholder: "Additional details..."

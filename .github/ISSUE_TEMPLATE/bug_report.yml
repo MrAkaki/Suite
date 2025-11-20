@@ -1,0 +1,137 @@
+name: Bug Report
+description: Report a bug or issue with EVE Tools
+title: "[BUG] "
+labels: ["bug", "status: triage"]
+assignees: []
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for reporting a bug! Please fill out the information below to help us resolve the issue quickly.
+        
+        **Before submitting:** Please search existing issues to see if this bug has already been reported.
+
+  - type: input
+    id: tool-version
+    attributes:
+      label: EVE Tools Version
+      description: Which version of EVE Tools are you using?
+      placeholder: "e.g., v1.2.3 or commit hash"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: module
+    attributes:
+      label: Module/Component
+      description: Which module or component is affected?
+      options:
+        - Contract Management
+        - Market Analysis
+        - Fleet Management  
+        - Corporation Tools
+        - Industry Planning
+        - PvP Tools
+        - PvE Tools
+        - General/Core
+        - Not sure
+    validations:
+      required: true
+
+  - type: input
+    id: environment
+    attributes:
+      label: Environment
+      description: What environment are you running in?
+      placeholder: "e.g., Windows 11, Chrome 118, EVE Client 21.10"
+    validations:
+      required: true
+
+  - type: textarea
+    id: summary
+    attributes:
+      label: Bug Summary
+      description: A clear and concise description of the bug
+      placeholder: "Describe what the bug is..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Steps to Reproduce
+      description: Detailed steps to reproduce the behavior
+      placeholder: |
+        1. Go to '...'
+        2. Click on '...'
+        3. Enter '...'
+        4. See error
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected Behavior
+      description: What should happen?
+      placeholder: "Describe what you expected to happen..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual Behavior
+      description: What actually happened?
+      placeholder: "Describe what actually happened..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: Screenshots/Logs
+      description: If applicable, add screenshots or paste relevant log entries
+      placeholder: "Drag and drop images here, or paste log entries..."
+
+  - type: input
+    id: character-name
+    attributes:
+      label: EVE Character Name (Optional)
+      description: Your EVE character name (helps with debugging character-specific issues)
+      placeholder: "e.g., John Doe"
+
+  - type: dropdown
+    id: severity
+    attributes:
+      label: Severity
+      description: How severe is this bug?
+      options:
+        - Critical - App crashes or data loss
+        - High - Major feature broken
+        - Medium - Minor feature issue
+        - Low - Cosmetic issue
+      default: 2
+    validations:
+      required: true
+
+  - type: textarea
+    id: additional
+    attributes:
+      label: Additional Context
+      description: Add any other context about the problem here
+      placeholder: "Any additional information that might help..."
+
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Checklist
+      description: Please confirm the following
+      options:
+        - label: I have searched existing issues for duplicates
+          required: true
+        - label: I am using the latest version of EVE Tools
+          required: true
+        - label: I have provided all the requested information
+          required: true

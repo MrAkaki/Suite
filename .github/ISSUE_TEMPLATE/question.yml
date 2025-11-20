@@ -34,12 +34,8 @@ body:
       label: Related Module (if applicable)
       description: Is your question about a specific module?
       options:
-        - Market Analysis
-        - Fleet Management  
-        - Corporation Tools
-        - Industry Planning
-        - PvP Tools
-        - PvE Tools
+        - Authentication Module
+        - Notification Module
         - General/Core
         - Not specific to a module
         - Not sure

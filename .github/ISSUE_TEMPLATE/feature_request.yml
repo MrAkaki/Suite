@@ -18,15 +18,10 @@ body:
       label: Module/Component
       description: Which module would this feature belong to?
       options:
-        - Contract Management
-        - Market Analysis
-        - Fleet Management  
-        - Corporation Tools
-        - Industry Planning
-        - PvP Tools
-        - PvE Tools
+        - Authentication Module
+        - Notification Module
         - General/Core
-        - New Tool
+        - New Module
         - Not sure
     validations:
       required: true

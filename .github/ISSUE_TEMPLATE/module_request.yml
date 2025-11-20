@@ -36,7 +36,8 @@ body:
       label: Tool Category
       description: What category does this tool fit into?
       options:
-        - Contract Management
+        - Authentication Module
+        - Notification Module
         - Market Analysis
         - Fleet Management  
         - Corporation Tools

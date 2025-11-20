@@ -27,13 +27,8 @@ body:
       label: Module/Component
       description: Which module or component is affected?
       options:
-        - Contract Management
-        - Market Analysis
-        - Fleet Management  
-        - Corporation Tools
-        - Industry Planning
-        - PvP Tools
-        - PvE Tools
+        - Authentication Module
+        - Notification Module
         - General/Core
         - Not sure
     validations:

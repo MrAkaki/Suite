@@ -1,7 +1,7 @@
 # EVE Tools - Issues & Feature Requests
 
-[![Issues](https://img.shields.io/github/issues/MrAkaki/Issues)](https://github.com/MrAkaki/Issues/issues)
-[![License](https://img.shields.io/github/license/MrAkaki/Issues)](LICENSE)
+[![Issues](https://img.shields.io/github/issues/MrAkaki/Suite)](https://github.com/MrAkaki/Suite/issues)
+[![License](https://img.shields.io/github/license/MrAkaki/Suite)](LICENSE)
 
 Welcome to the central hub for reporting bugs, requesting features, and discussing improvements for **EVE Tools** - a growing collection of utilities for EVE Online players developed by MrAkaki.
 
@@ -45,7 +45,7 @@ When reporting a bug, please use the **Bug Report** template and include:
 - **Screenshots/logs** - Visual evidence helps immensely
 - **Additional context** - Any other relevant information
 
-[**Report a Bug →**](https://github.com/MrAkaki/Issues/issues/new?template=bug_report.yml)
+[**Report a Bug →**](https://github.com/MrAkaki/Suite/issues/new?template=bug_report.yml)
 
 ## ✨ Requesting Features
 
@@ -57,7 +57,7 @@ For feature requests, please use the **Feature Request** template and provide:
 - **Alternatives considered** - Other ways to solve the problem
 - **Additional context** - Screenshots, mockups, examples
 
-[**Request a Feature →**](https://github.com/MrAkaki/Issues/issues/new?template=feature_request.yml)
+[**Request a Feature →**](https://github.com/MrAkaki/Suite/issues/new?template=feature_request.yml)
 
 ## 🔧 Requesting New Modules
 
@@ -70,7 +70,7 @@ For new tool/module ideas, use the **Module Request** template:
 - **EVE integration** - How it connects to EVE Online
 - **Priority** - How important is this to you
 
-[**Request a Module →**](https://github.com/MrAkaki/Issues/issues/new?template=module_request.yml)
+[**Request a Module →**](https://github.com/MrAkaki/Suite/issues/new?template=module_request.yml)
 
 ## 📚 Community Guidelines
 
@@ -104,7 +104,8 @@ We use labels to categorize and prioritize issues:
 - `status: help-wanted` - Community contributions welcome
 
 ### Module Labels
-- `module: contracts` - Contract notification and management tools
+- `module: authentication` - Authentication module related issues
+- `module: notification` - Notification module related issues
 - `module: future` - Ideas for future development
 
 ## 📊 Project Board

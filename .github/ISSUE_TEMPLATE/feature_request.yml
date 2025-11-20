@@ -5,18 +5,11 @@ labels: ["enhancement", "status: triage"]
 assignees: []
 
 body:
-  - type: markdown
-    attributes:
-      value: |
-        Thanks for suggesting a feature! Please provide detailed information to help us understand your needs.
-        
-        **Before submitting:** Please search existing issues to see if this feature has already been requested.
-
   - type: dropdown
     id: module
     attributes:
-      label: Module/Component
-      description: Which module would this feature belong to?
+      label: Module
+      description: Which module?
       options:
         - Authentication Module
         - Notification Module
@@ -27,120 +20,37 @@ body:
       required: true
 
   - type: textarea
-    id: summary
-    attributes:
-      label: Feature Summary
-      description: A clear and concise description of the feature you'd like to see
-      placeholder: "I would like..."
-    validations:
-      required: true
-
-  - type: textarea
     id: problem
     attributes:
-      label: Problem Statement
-      description: What problem does this feature solve? What pain point does it address?
-      placeholder: "This feature would solve the problem of..."
+      label: Problem
+      description: What problem does this solve?
+      placeholder: "This feature would solve..."
     validations:
       required: true
 
   - type: textarea
     id: solution
     attributes:
-      label: Proposed Solution
-      description: How would you like this feature to work?
-      placeholder: "I think it should work by..."
-    validations:
-      required: true
-
-  - type: textarea
-    id: use-cases
-    attributes:
-      label: Use Cases
-      description: Provide specific scenarios where this feature would be useful
-      placeholder: |
-        1. As a [type of player], I want to [do something] so that [benefit]
-        2. When [situation], this feature would help by [explanation]
-    validations:
-      required: true
-
-  - type: dropdown
-    id: user-type
-    attributes:
-      label: Target Users
-      description: Who would primarily benefit from this feature?
-      options:
-        - New Players
-        - Casual Players
-        - Experienced Players
-        - Corporation Leaders
-        - Fleet Commanders
-        - Traders/Industrialists
-        - PvP Pilots
-        - PvE Players
-        - All Players
-      multiple: true
-    validations:
-      required: true
-
-  - type: dropdown
-    id: priority
-    attributes:
-      label: Priority
-      description: How important is this feature to you?
-      options:
-        - Critical - Can't work effectively without it
-        - High - Would significantly improve my workflow
-        - Medium - Would be nice to have
-        - Low - Minor convenience improvement
-      default: 1
+      label: Possible Solution
+      description: How should this work?
+      placeholder: "It should work by..."
     validations:
       required: true
 
   - type: textarea
     id: alternatives
     attributes:
-      label: Alternatives Considered
-      description: What alternatives have you considered? Are there existing tools that do something similar?
-      placeholder: "I've considered using [alternative], but..."
-
-  - type: textarea
-    id: implementation
-    attributes:
-      label: Implementation Ideas
-      description: Do you have ideas about how this could be implemented? (Technical details welcome but not required)
-      placeholder: "This could potentially work by..."
-
-  - type: textarea
-    id: mockups
-    attributes:
-      label: Mockups/Examples
-      description: If you have mockups, screenshots of similar features, or examples from other tools, please share them
-      placeholder: "Drag and drop images here or describe examples..."
-
-  - type: input
-    id: eve-integration
-    attributes:
-      label: EVE Online Integration
-      description: Does this feature require specific EVE Online API endpoints or game data?
-      placeholder: "e.g., ESI Market Data, Character Skills, etc."
-
-  - type: textarea
-    id: additional
-    attributes:
-      label: Additional Context
-      description: Any other context or information about the feature request
-      placeholder: "Additional details..."
+      label: Alternatives
+      description: Other solutions considered?
+      placeholder: "I've considered..."
 
   - type: checkboxes
     id: terms
     attributes:
-      label: Checklist
-      description: Please confirm the following
+      label: Terms
+      description: Please confirm
       options:
-        - label: I have searched existing issues for similar requests
+        - label: I searched existing issues
           required: true
-        - label: I have provided a clear problem statement and use cases
-          required: true
-        - label: This feature aligns with EVE Tools' goals and CCP's policies
+        - label: This aligns with EVE Tools goals
           required: true

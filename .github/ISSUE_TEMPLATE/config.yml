@@ -1,11 +1,8 @@
 blank_issues_enabled: false
 contact_links:
   - name: 💬 Discussions
-    url: https://github.com/MrAkaki/Issues/discussions
+    url: https://github.com/MrAkaki/Suite/discussions
     about: General discussions, ideas, and community conversation
-  - name: 📚 Documentation
-    url: https://github.com/MrAkaki/eve-tools-docs
-    about: User guides, API documentation, and help resources
   - name: 🔒 Security Issues
-    url: mailto:security@example.com
+    url: mailto:mr@mrakaki.com
     about: Report security vulnerabilities privately
